@@ -7,8 +7,7 @@ public class LoremIpsum {
     public static void writeString(List<String>strings){
         File  file = new File("filtered_lorem_ipsum.txt");
 
-        try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
             String string = "";
             for (String s:strings) {
                 string += s + " ";
