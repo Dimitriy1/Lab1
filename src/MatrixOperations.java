@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class MatrixOperations {
 
-    public static void writeMatrix(int[][] matrix) {
-        try (FileWriter writer = new FileWriter("reflected_matrix.txt")) {
+    public static void writeMatrixToFile(int[][] matrix,String path) {
+        try (FileWriter writer = new FileWriter(path)) {
             for (int i = 0; i < matrix.length; i++) {
                 String text = Arrays.toString(matrix[i]);
                 writer.append(text.substring(1, text.length() - 1));
@@ -39,7 +39,7 @@ public class MatrixOperations {
     }
 
     public static void main(String[] args) {
-        int[][] matrix = {{82, 38, -7, 3, 7},
+        int[][] matrix = {{82, 38, -7, 3, 4},
                 {-85, 36, -29, -97, 10},
                 {-62, 33, 63, 57, 40},
                 {38, 35, -65, 83, 200},
@@ -49,7 +49,7 @@ public class MatrixOperations {
         MatrixOperations.reflect(matrix);
         System.out.print("\n");
         showMatrix(matrix);
-        MatrixOperations.writeMatrix(matrix);
+        MatrixOperations.writeMatrixToFile(matrix,"reflected_matrix.txt");
 
     }
 }
