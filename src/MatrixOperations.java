@@ -11,6 +11,7 @@ public class MatrixOperations {
                 writer.append(text.substring(1, text.length() - 1));
                 writer.append('\n');
             }
+            writer.close();
 
             writer.flush();
         } catch (IOException ex) {
