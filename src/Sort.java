@@ -45,7 +45,7 @@ public class Sort {
         int[]arr = new int[1000000];
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(1000000) - 500000;
+            arr[i] = random.nextInt(arr.length) - arr.length / 2;
         }
         quickSort(arr,0,arr.length - 1);
         System.out.println(Arrays.toString(arr));
