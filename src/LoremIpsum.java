@@ -19,7 +19,6 @@ public class LoremIpsum {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public static String readString(){
@@ -39,8 +38,6 @@ public class LoremIpsum {
         return str;
     }
 
-
-
     public static List<String> analyze(String str){
         String[]strings = str.split("\\s+");
         List<String>result = new LinkedList<>();
@@ -52,7 +49,6 @@ public class LoremIpsum {
         }
 
         return result;
-
     }
 
     public static void main(String[] args) {
