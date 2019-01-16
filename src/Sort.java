@@ -9,30 +9,24 @@ public class Sort {
         }
 
         int ind = (right + left) / 2;
-
         int i = left;
         int j = right;
         int mid = arr[ind];
-
         while (i <= j) {
             while (arr[i] < mid) {
                 i++;
             }
-
             while (arr[j] > mid) {
                 j--;
             }
-
             if (i > j) {
                 break;
             }
-
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
             j--;
             i++;
-
         }
 
         quickSort(arr,left,j);
