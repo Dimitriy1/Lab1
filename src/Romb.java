@@ -10,7 +10,7 @@ public class Romb {
 
         int k = i;
         int numbOfBlanks = numb / 2;
-        while (true){
+        while (true) {
             String blank = "";
             for (int j = 0; j < numbOfBlanks; j++) {
                 blank += " ";
