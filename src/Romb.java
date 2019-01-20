@@ -12,7 +12,6 @@ public class Romb {
         int numbOfBlanks = numb / 2;
         while (true) {
             String blank = "";
-
             for (int j = 0; j < numbOfBlanks; j++) {
                 blank += " ";
             }
