@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Romb {
 
-    public static void drawRomb(int numb){
+    public static void drawRomb(int numb) {
         int i = numb % 2;
         if (i == 0) {
             throw new IllegalArgumentException("even number is not supported");
@@ -12,10 +12,11 @@ public class Romb {
         int numbOfBlanks = numb / 2;
         while (true) {
             String blank = "";
+
             for (int j = 0; j < numbOfBlanks; j++) {
                 blank += " ";
             }
-            for (int j = 1; j <= i ; j++) {
+            for (int j = 1; j <= i; j++) {
                 blank += "*";
             }
             System.out.print(blank + "\n");
