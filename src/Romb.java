@@ -27,7 +27,7 @@ public class Romb {
                 numbOfBlanks++;
                 i -= 2;
             }
-            if (i < numb % 2){
+            if (i < numb % 2) {
                 break;
             }
         }
