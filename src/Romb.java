@@ -4,7 +4,7 @@ public class Romb {
 
     public static void drawRomb(int numb){
         int i = numb % 2;
-        if (i == 0){
+        if (i == 0) {
             throw new IllegalArgumentException("even number is not supported");
         }
 
