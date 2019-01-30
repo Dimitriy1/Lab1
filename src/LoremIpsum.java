@@ -6,7 +6,6 @@ public class LoremIpsum {
 
     public static void writeString(List<String>strings){
         File  file = new File("filtered_lorem_ipsum.txt");
-
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
             String string = "";
             for (String s:strings) {
@@ -21,7 +20,6 @@ public class LoremIpsum {
 
     public static String readString(){
         String str = "";
-
         try(FileReader reader = new FileReader("input.txt")) {
             int c;
             while((c = reader.read()) != -1){
@@ -38,7 +36,6 @@ public class LoremIpsum {
     public static List<String> analyze(String str){
         String[]strings = str.split("\\s+");
         List<String>result = new LinkedList<>();
-
         for (String s: strings) {
             if (s.length() > 3){
                 result.add(s);
