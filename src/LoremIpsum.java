@@ -13,9 +13,7 @@ public class LoremIpsum {
                 string += s + " ";
             }
             bufferedWriter.write(string);
-
             bufferedWriter.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,7 +24,6 @@ public class LoremIpsum {
 
         try(FileReader reader = new FileReader("input.txt")) {
             int c;
-
             while((c = reader.read()) != -1){
                str += (char)c;
             }
